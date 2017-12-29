@@ -15,15 +15,18 @@ if (!is_null($events['events'])) {
 			$text = $event['message']['text'];
 			// Get replyToken
 			$replyToken = $event['replyToken'];
+			
+			// alart call
+			$humancall ='ครับผม มีออะไรให้ช่วยครับ';
 
 			if (strpos($text, 'โมบี้') !== false) {
-				$messages = ['type' => 'text','text' => 'ครับผม มีออะไรให้ช่วยคับ'];
+				$messages = ['type' => 'text','text' => $humancall];
 			}
 			if (strpos($text, 'moby') !== false) {
-				$messages = ['type' => 'text','text' => 'ครับผม มีออะไรให้ช่วยคับ'];
+				$messages = ['type' => 'text','text' => $humancall];
 			}
 			if (strpos($text, 'Moby') !== false) {
-				$messages = ['type' => 'text','text' => 'ครับผม มีออะไรให้ช่วยคับ'];
+				$messages = ['type' => 'text','text' => $humancall];
 			}
 
 
